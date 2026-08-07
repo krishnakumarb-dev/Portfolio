@@ -1,0 +1,179 @@
+/* =========================================================
+   PORTFOLIO DESIGN SYSTEM
+   Krishna Kumar Portfolio
+========================================================= */
+
+/* ------------------------------
+   Google Font
+------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+/* ------------------------------
+   Light Theme
+------------------------------ */
+:root {
+
+  /* Primary Colors */
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-secondary: #6366f1;
+  --color-accent: #06b6d4;
+
+  /* Backgrounds */
+  --background: #f8fafc;
+  --surface: rgba(255,255,255,0.55);
+  --surface-hover: rgba(255,255,255,0.75);
+
+  /* Glass */
+  --glass: rgba(255,255,255,0.45);
+  --glass-border: rgba(255,255,255,0.35);
+
+  /* Text */
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-white: #ffffff;
+
+  /* Status */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Border */
+  --border: rgba(0,0,0,.08);
+
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* Blur */
+  --blur: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 8px 20px rgba(0,0,0,.08);
+  --shadow-md: 0 15px 40px rgba(0,0,0,.12);
+  --shadow-lg: 0 25px 60px rgba(0,0,0,.15);
+
+  /* Container */
+  --container-width: 1280px;
+
+  /* Navbar */
+  --navbar-height: 82px;
+
+  /* Transition */
+  --transition-fast: .2s ease;
+  --transition-normal: .35s ease;
+  --transition-slow: .5s ease;
+}
+
+/* ------------------------------
+   Dark Theme
+------------------------------ */
+
+.dark {
+
+  --background: #09111f;
+
+  --surface: rgba(18,30,48,.55);
+
+  --surface-hover: rgba(30,41,59,.75);
+
+  --glass: rgba(18,30,48,.45);
+
+  --glass-border: rgba(255,255,255,.08);
+
+  --text-primary: #f8fafc;
+
+  --text-secondary: #94a3b8;
+
+  --border: rgba(255,255,255,.08);
+
+  --shadow-sm: 0 8px 20px rgba(0,0,0,.35);
+
+  --shadow-md: 0 18px 40px rgba(0,0,0,.45);
+
+  --shadow-lg: 0 30px 70px rgba(0,0,0,.6);
+
+}
+
+/* ------------------------------
+   Base Styles
+------------------------------ */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  font-family:"Inter",sans-serif;
+
+  background:var(--background);
+
+  color:var(--text-primary);
+
+  transition:
+      background var(--transition-normal),
+      color var(--transition-normal);
+
+  overflow-x:hidden;
+
+}
+
+img{
+
+  display:block;
+
+  max-width:100%;
+
+}
+
+a{
+
+  color:inherit;
+
+  text-decoration:none;
+
+}
+
+button{
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  cursor:pointer;
+
+  font-family:inherit;
+
+}
+
+input,
+textarea{
+
+  font-family:inherit;
+
+}
+
+section{
+
+  padding:100px 24px;
+
+}
+
+.container{
+
+  width:min(var(--container-width),100%);
+
+  margin-inline:auto;
+
+}

@@ -1,0 +1,226 @@
+.nav-link{
+
+    transition:.25s;
+
+}
+
+.nav-link.active{
+
+    color:var(--color-primary);
+
+    font-weight:600;
+
+}
+.nav-link{
+
+    position:relative;
+        transition:.3s;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:.3s;
+
+}
+
+.nav-link.active::after{
+
+    width:100%;
+
+}
+.nav-link.active{
+    color:var(--color-primary);
+    font-weight:600;
+}
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    border-radius:99px;
+
+    transition:.3s;
+
+}
+
+.nav-link.active::after{
+
+    width:100%;
+
+}
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:1024px){
+
+.hero-container{
+
+    gap:50px;
+
+}
+
+.hero-title{
+
+    font-size:3.4rem;
+
+}
+
+.profile-placeholder{
+
+    width:320px;
+
+    height:320px;
+
+}
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+.hero{
+
+    padding-top:110px;
+
+}
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:40px;
+
+}
+
+.hero-left{
+
+    align-items:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-stats{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-title{
+
+    font-size:2.8rem;
+
+}
+
+.hero-role{
+
+    font-size:1.35rem;
+
+}
+
+.hero-description{
+
+    max-width:100%;
+
+}
+
+.profile-placeholder{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+}
+
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width:480px){
+
+.hero-title{
+
+    font-size:2.3rem;
+
+}
+
+.hero-role{
+
+    font-size:1.15rem;
+
+}
+
+.hero-description{
+
+    font-size:.95rem;
+
+}
+
+.profile-placeholder{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn{
+
+    width:100%;
+
+}
+
+}

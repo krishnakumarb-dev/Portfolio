@@ -1,0 +1,167 @@
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+
+.experience{
+
+    padding:100px 0;
+
+}
+
+.experience-card{
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+    padding:32px;
+
+    border-radius:28px;
+
+    background:var(--glass-bg);
+
+    border:1px solid var(--glass-border);
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s ease;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.experience-card h2{
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.experience-card h3{
+
+    font-size:1.25rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.experience-duration{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(37,99,235,.08);
+
+    color:var(--color-primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.experience-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+.experience-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 30px;
+
+}
+
+.experience-card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:14px;
+
+    color:var(--text-secondary);
+
+    font-size:1rem;
+
+}
+
+.experience-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.experience-tech .tech-pill{
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:rgba(37,99,235,.08);
+
+    border:1px solid rgba(37,99,235,.18);
+
+    color:var(--color-primary);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+    .experience-card{
+
+        padding:28px;
+
+    }
+
+    .experience-card h2{
+
+        font-size:1.55rem;
+
+    }
+
+    .experience-card h3{
+
+        font-size:1.1rem;
+
+    }
+
+}
