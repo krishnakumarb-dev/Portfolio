@@ -57,13 +57,7 @@ function Footer() {
 
           </div>
 
-          <button
-            className="back-top-btn"
-            onClick={scrollToTop}
-          >
-            <ArrowUp size={18} />
-            Back to Top
-          </button>
+        
 
         </div>
 
