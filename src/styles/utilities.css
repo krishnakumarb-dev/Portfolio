@@ -308,9 +308,9 @@ width:100%;
 
     background:var(--glass);
 
-    backdrop-filter:blur(var(--blur));
+    backdrop-filter:blur(20px);
 
-    -webkit-backdrop-filter:blur(var(--blur));
+    -webkit-backdrop-filter:blur(20px);
 
     border:1px solid var(--glass-border);
 
