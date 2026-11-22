@@ -4,6 +4,7 @@ import medicinefinderThumbnail from "../assets/images/projects/medicine-finder-a
 import helloBuddyThumbnail from "../assets/images/projects/hello-buddy/thumbnail.webp";
 import smartInventoryThumbnail from "../assets/images/projects/smart-inventory/thumbnail.webp";
 import medicineThumbnail from "../assets/images/projects/medicine-finder/thumbnail.webp";
+import pathBuddyThumbnail from "../assets/images/projects/pathbuddy/thumbnail.png";
 
 const projects = [
   {
@@ -119,6 +120,38 @@ features:[
 
     github:
       "https://github.com/krishnakumarb-dev/Smart-Inventory-Management-System",
+
+    live: "",
+
+    featured: true,
+  },
+
+  {
+    id: 5,
+    slug: "pathbuddy",
+    title: "PathBuddy",
+    thumbnail: pathBuddyThumbnail,
+
+    description:
+      "A mobile app that helps pilgrimage groups plan trips together. Members can coordinate group details, manage day-by-day itineraries, share announcements, and use location-based check-ins to stay connected.",
+    features: [
+      "Group coordination",
+      "Trip planning",
+      "Announcements",
+      "Location-based check-ins",
+    ],
+    technologies: [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Expo Router",
+      "JWT Authentication",
+    ],
+
+    github: "https://github.com/krishnakumarb-dev/Pathbuddy",
 
     live: "",
 
